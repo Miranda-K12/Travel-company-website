@@ -1,4 +1,4 @@
-##Travel in Georgia project
+## Travel in Georgia project
 
 Links
 Solution URL: https://travel-in-georgia-miranda-k12.netlify.app/
