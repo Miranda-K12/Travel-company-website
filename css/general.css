@@ -1,0 +1,194 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+default:1
+Medium: 1.5
+large:1.8
+
+
+- Letter spacing
+-1.6px,
+-2px,
+-3px
+--- 02 COLORS
+
+- Primary:#156530;
+- Shades: 
+rgba(72, 226, 80, 0.35)
+
+- font-colors: #fff;
+- Greys
+#333,
+
+
+--- 05 SHADOWS
+
+ 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  0px 0.5rem 1.5rem rgba(72, 226, 80, 0.35) ;
+
+--- 06 BORDER-RADIUS
+
+small 0.9rem
+medium:1rem; 
+large: 2rem
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #156530;
+  background-color: #f9f6ee;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 144rem;
+  padding: 0 2.4rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--white {
+  width: 50%;
+  background-color: #fff;
+  color: #156530;
+}
+.btn--green {
+  width: 30%;
+  color: #fff;
+  background-color: #156530;
+}
+.btn--explore {
+  width: 50%;
+  color: #fff;
+  background-color: #156530;
+  text-align: center;
+}
+.btn--tours {
+  background-color: #156530;
+  color: #fff;
+  width: 30%;
+}
+.btn--back {
+  width: 60%;
+  color: #156530;
+  background-color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.btn--white::after,
+.btn--back {
+  background-color: #fff;
+}
+.btn--tours::after,
+.btn--green::after,
+.btn--explore::after {
+  background-color: #156530;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.margin-left {
+  display: inline-block;
+  margin-left: 4.8rem;
+}
+.nav-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

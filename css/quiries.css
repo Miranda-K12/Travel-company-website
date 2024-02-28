@@ -1,0 +1,267 @@
+/* Below 1344 px */
+@media only screen and (max-width: 84em) {
+  .container {
+    max-width: 120rem;
+  }
+  .header {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 9.6rem;
+  }
+  .section-tours {
+    margin: 4.8rem 0;
+  }
+  .testimonial {
+    width: 90%;
+  }
+  .booking {
+    top: 48%;
+    width: 95%;
+  }
+  .btn-mobile-nav {
+    display: hidden;
+  }
+}
+/* Below 1100 px */
+@media only screen and (max-width: 67em) {
+  .container {
+    max-width: 110rem;
+  }
+  html {
+    font-size: 60%;
+  }
+  .btn-mobile-nav {
+    display: hidden;
+  }
+  .hero-box {
+    top: 60%;
+  }
+  .head-georgia {
+    text-align: center;
+    margin-top: 3.2rem;
+  }
+
+  .booking-form-box {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+  }
+  .testimonial-text {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    z-index: 1;
+  }
+  .testimonial-name {
+    font-size: 1.8rem;
+  }
+  .section-footer {
+    margin-top: 4.8rem;
+  }
+  .grid {
+    display: grid;
+    column-gap: 3.6rem;
+    row-gap: 2.4rem;
+  }
+  .btn--explore {
+    width: 70%;
+    text-align: center;
+  }
+  .btn-mobile-nav {
+    display: hidden;
+  }
+}
+/* Below 1000 px */
+@media only screen and (max-width: 62.5em) {
+  .container {
+    max-width: 100rem;
+  }
+  html {
+    font-size: 58%;
+  }
+  .section-georgia {
+    grid-template-columns: 1fr;
+  }
+  .tour-details {
+    margin-bottom: 4.58rem;
+  }
+  .head-georgia {
+    font-size: 4.8rem;
+  }
+
+  .visit-list {
+    font-size: 3rem;
+  }
+  .btn--explore {
+    width: 40%;
+    text-align: center;
+  }
+  .btn:link,
+  .btn:visited {
+    font-size: 2rem;
+  }
+
+  .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  .all-tours {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .feature-image {
+    height: 50rem;
+  }
+  .feature-title {
+    font-size: 3.6rem;
+  }
+  .tour-list {
+    font-size: 3rem;
+  }
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+  }
+  .footer-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .footer-link {
+    font-size: 1.6rem;
+  }
+  .btn-mobile-nav {
+    display: hidden;
+  }
+}
+/* Below 930 px */
+@media only screen and (max-width: 58em) {
+  html {
+    font-size: 50%;
+  }
+  .main-nav-list {
+    font-size: 1.6rem;
+  }
+
+  .hero-box__primary--main {
+    font-size: 4.2rem;
+    letter-spacing: 2px;
+  }
+  .hero-box__primary--sub {
+    font-size: 2.8rem;
+    letter-spacing: 1.6px;
+  }
+  .btn-mobile-nav {
+    display: hidden;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.6rem;
+  }
+
+  .head-georgia,
+  .tours,
+  .testimonial-head,
+  .booking-head {
+    font-size: 3.6rem;
+  }
+  .feature-title {
+    font-size: 3rem;
+  }
+  .icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .visit-list {
+    font-size: 2.4rem;
+  }
+  .tour-list {
+    font-size: 2.4rem;
+  }
+  .booking-form {
+    font-size: 1.6rem;
+  }
+  .booking-form-box {
+    font-size: 1.2rem;
+  }
+}
+/* Below 780 px */
+@media only screen and (max-width: 48.75em) {
+  .btn--white {
+    max-width: 40vh;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    display: none;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1;
+  }
+}
+
+/* Below 544 px */
+@media only screen and (max-width: 34em) {
+  html {
+    font-size: 40%;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+
+  .feature-title {
+    font-size: 2.4rem;
+  }
+  .hero-box {
+    top: 40%;
+  }
+  .tour-list {
+    font-size: 2rem;
+  }
+
+  .section-booking {
+    height: 120vh;
+  }
+  .booking-form {
+    color: #156530;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 1.2rem;
+    width: 60%;
+  }
+}
+
+/* Below 400 px */
+@media only screen and (max-width: 25em) {
+  .hero-box {
+    width: 90vw;
+  }
+  .hero-box__primary--main {
+    font-size: 3.6rem;
+  }
+  .head-georgia,
+  .tours,
+  .testimonial-head,
+  .booking-head {
+    font-size: 3rem;
+  }
+  .btn--explore,
+  .btn--green {
+    width: 50%;
+  }
+  .section-testemonials {
+    max-width: 100%;
+  }
+  .testimonial {
+    max-width: 100%;
+    flex-direction: column;
+  }
+}
